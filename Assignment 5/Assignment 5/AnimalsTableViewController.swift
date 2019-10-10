@@ -15,6 +15,8 @@ class AnimalsTableViewController: UITableViewController {
     //MARK: Properties
     
     var animals = [Animal]()
+    var currAnimal = 0
+    var currSpot = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,7 +59,7 @@ class AnimalsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return animals.count
+        return animals.count * 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -68,14 +70,18 @@ class AnimalsTableViewController: UITableViewController {
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let animal = animals[indexPath.row]
+        var animal = animals[0]
         
-        if indexPath.row % 2 == 0
+        if(currAnimal <= 3){
+            animal = animals[currAnimal]
+        }
+        
+        if currSpot % 2 == 0
         {
             
             let cellIdentifier = "AnimalCell"
             
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? animalCell  else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AnimalCell  else {
                 fatalError("The dequeued cell is not an instance of AnimalCell.")
             }
             
@@ -83,6 +89,8 @@ class AnimalsTableViewController: UITableViewController {
             cell.animalPic.image = animal.photo
             cell.animalTitle.text = animal.name
             
+            currAnimal += 1
+            currSpot += 1
             return cell
         }
             
@@ -90,14 +98,15 @@ class AnimalsTableViewController: UITableViewController {
             
             let cellIdentifier = "AnimalInfoCell"
             
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? animalInfoCell  else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AnimalInfoCell  else {
                 fatalError("The dequeued cell is not an instance of AnimalInfoCell.")
             }
             
-            cell.animalSciName.text = animal.scientificName
-            cell.animalClassLabel.text = animal.className
-            cell.weightLabel.text = animal.size
+            cell.animalSciName.text = "Scientific Name: \(animal.scientificName)"
+            cell.animalClassLabel.text = "Class: \(animal.className)"
+            cell.weightLabel.text = "Weight: + \(animal.size)"
             
+            currSpot += 1
             return cell
         }
     }

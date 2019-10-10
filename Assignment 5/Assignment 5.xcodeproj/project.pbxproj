@@ -14,8 +14,8 @@
 		DD19DBB8234F138D00BD3442 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD19DBB6234F138D00BD3442 /* LaunchScreen.storyboard */; };
 		DD19DBC2234F142E00BD3442 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC1234F142E00BD3442 /* Animal.swift */; };
 		DD19DBC4234F187900BD3442 /* AnimalsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC3234F187900BD3442 /* AnimalsTableViewController.swift */; };
-		DD19DBC6234F2FA000BD3442 /* animalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC5234F2FA000BD3442 /* animalCell.swift */; };
-		DD19DBC8234F2FDB00BD3442 /* animalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC7234F2FDB00BD3442 /* animalInfoCell.swift */; };
+		DD19DBC6234F2FA000BD3442 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC5234F2FA000BD3442 /* AnimalCell.swift */; };
+		DD19DBC8234F2FDB00BD3442 /* AnimalInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD19DBC7234F2FDB00BD3442 /* AnimalInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		DD19DBB9234F138D00BD3442 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD19DBC1234F142E00BD3442 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		DD19DBC3234F187900BD3442 /* AnimalsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsTableViewController.swift; sourceTree = "<group>"; };
-		DD19DBC5234F2FA000BD3442 /* animalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalCell.swift; sourceTree = "<group>"; };
-		DD19DBC7234F2FDB00BD3442 /* animalInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = animalInfoCell.swift; sourceTree = "<group>"; };
+		DD19DBC5234F2FA000BD3442 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
+		DD19DBC7234F2FDB00BD3442 /* AnimalInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +66,8 @@
 				DD19DBAD234F138900BD3442 /* AppDelegate.swift */,
 				DD19DBAF234F138900BD3442 /* ViewController.swift */,
 				DD19DBB1234F138900BD3442 /* Main.storyboard */,
-				DD19DBC5234F2FA000BD3442 /* animalCell.swift */,
-				DD19DBC7234F2FDB00BD3442 /* animalInfoCell.swift */,
+				DD19DBC5234F2FA000BD3442 /* AnimalCell.swift */,
+				DD19DBC7234F2FDB00BD3442 /* AnimalInfoCell.swift */,
 				DD19DBC3234F187900BD3442 /* AnimalsTableViewController.swift */,
 				DD19DBB4234F138D00BD3442 /* Assets.xcassets */,
 				DD19DBB6234F138D00BD3442 /* LaunchScreen.storyboard */,
@@ -147,12 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD19DBC6234F2FA000BD3442 /* animalCell.swift in Sources */,
+				DD19DBC6234F2FA000BD3442 /* AnimalCell.swift in Sources */,
 				DD19DBB0234F138900BD3442 /* ViewController.swift in Sources */,
 				DD19DBAE234F138900BD3442 /* AppDelegate.swift in Sources */,
 				DD19DBC4234F187900BD3442 /* AnimalsTableViewController.swift in Sources */,
 				DD19DBC2234F142E00BD3442 /* Animal.swift in Sources */,
-				DD19DBC8234F2FDB00BD3442 /* animalInfoCell.swift in Sources */,
+				DD19DBC8234F2FDB00BD3442 /* AnimalInfoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
