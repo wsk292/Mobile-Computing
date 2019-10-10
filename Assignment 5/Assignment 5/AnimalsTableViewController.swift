@@ -70,13 +70,18 @@ class AnimalsTableViewController: UITableViewController {
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var animal = animals[0]
         
-        if(currAnimal <= 3){
+        var animal = animals[3]
+        
+        if(currSpot == 0){
+            animal = animals[0]
+        }
+        
+        if(currAnimal <= 3 && currSpot != 0){
             animal = animals[currAnimal]
         }
         
-        if currSpot % 2 == 0
+        if (currSpot % 2 == 0 || currSpot == 0)
         {
             
             let cellIdentifier = "AnimalCell"
@@ -89,12 +94,16 @@ class AnimalsTableViewController: UITableViewController {
             cell.animalPic.image = animal.photo
             cell.animalTitle.text = animal.name
             
-            currAnimal += 1
             currSpot += 1
+            
+            
+            print("Animal Cell Type")
+            print(currAnimal)
+            print(currSpot)
             return cell
         }
             
-        else {
+        else{
             
             let cellIdentifier = "AnimalInfoCell"
             
@@ -106,9 +115,16 @@ class AnimalsTableViewController: UITableViewController {
             cell.animalClassLabel.text = "Class: \(animal.className)"
             cell.weightLabel.text = "Weight: + \(animal.size)"
             
+            
             currSpot += 1
+            currAnimal += 1
+            
+            print("Animal Info Cell Type")
+            print(currAnimal)
+            print(currSpot)
             return cell
         }
+        
     }
     
 
