@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>shark4</key>
+		<string>Great white breaching</string>
+		<key>shark3</key>
+		<string>Great white breaks the surface</string>
+		<key>shark2</key>
+		<string>Look at that smile!</string>
+		<key>shark1</key>
+		<string>Great white lurking in the water</string>
+	</dict>
+	<dict>
+		<key>cuttlefish4</key>
+		<string>Cuttlefish near surface</string>
+		<key>cuttlefish3</key>
+		<string>Cuttlefish with zebra-like patterns</string>
+		<key>cuttlefish2</key>
+		<string>Cuttlefish side view</string>
+		<key>cuttlefish1</key>
+		<string>Do you want to cuttle?</string>
+	</dict>
+	<dict>
+		<key>takhi4</key>
+		<string>Takhi action shot</string>
+		<key>takhi3</key>
+		<string>A photogenic takhi</string>
+		<key>takhi2</key>
+		<string>Takhi grazing in plain</string>
+		<key>takhi1</key>
+		<string>Takhi with calf</string>
+	</dict>
+	<dict>
+		<key>elephant4</key>
+		<string>A lonely elephant</string>
+		<key>elephant3</key>
+		<string>Family of elephants</string>
+		<key>elephant2</key>
+		<string>Baby elephant and its parent</string>
+		<key>elephant1</key>
+		<string>Elephant during sunset</string>
+	</dict>
+</array>
+</plist>
